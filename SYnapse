@@ -1,0 +1,234 @@
+-- // GUI TO LUA \\ --
+
+-- // INSTANCES: 22 | SCRIPTS: 0 | MODULES: 0 \\ --
+
+local UI = {}
+
+-- // StarterGui.ScreenGui \\ --
+UI["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"))
+UI["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling
+
+-- // StarterGui.ScreenGui. bar \\ --
+UI["2"] = Instance.new("Frame", UI["1"])
+UI["2"]["BorderSizePixel"] = 0
+UI["2"]["BackgroundColor3"] = Color3.fromRGB(61, 61, 61)
+UI["2"]["Size"] = UDim2.new(0.77353, 0, 0.04592, 0)
+UI["2"]["Position"] = UDim2.new(0.11246, 0, 0.19388, 0)
+UI["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["2"]["Name"] = [[ bar]]
+
+-- // StarterGui.ScreenGui. bar.Frame \\ --
+UI["3"] = Instance.new("Frame", UI["2"])
+UI["3"]["BorderSizePixel"] = 0
+UI["3"]["BackgroundColor3"] = Color3.fromRGB(57, 53, 53)
+UI["3"]["Size"] = UDim2.new(1, 0, 0.27778, 0)
+UI["3"]["Position"] = UDim2.new(0, 0, 0.96712, 0)
+UI["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+
+-- // StarterGui.ScreenGui. bar.TextLabel \\ --
+UI["4"] = Instance.new("TextLabel", UI["2"])
+UI["4"]["BorderSizePixel"] = 0
+UI["4"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["4"]["TextYAlignment"] = Enum.TextYAlignment.Top
+UI["4"]["BackgroundColor3"] = Color3.fromRGB(65, 61, 61)
+UI["4"]["TextSize"] = 14
+UI["4"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["4"]["TextDirection"] = Enum.TextDirection.LeftToRight
+UI["4"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["4"]["Size"] = UDim2.new(0.14462, 0, 10, 0)
+UI["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["4"]["Text"] = [[  Infinte Yield]]
+UI["4"]["Position"] = UDim2.new(0.84951, 0, 1.52267, 0)
+
+-- // StarterGui.ScreenGui. bar.TextLabel \\ --
+UI["5"] = Instance.new("TextLabel", UI["2"])
+UI["5"]["TextWrapped"] = true
+UI["5"]["BorderSizePixel"] = 0
+UI["5"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255)
+UI["5"]["TextScaled"] = true
+UI["5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["5"]["TextSize"] = 14
+UI["5"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["5"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["5"]["BackgroundTransparency"] = 1
+UI["5"]["Size"] = UDim2.new(0.02116, 0, 0.61111, 0)
+UI["5"]["BorderColor3"] = Color3.fromRGB(255, 255, 255)
+UI["5"]["Text"] = [[1]]
+UI["5"]["Position"] = UDim2.new(0.02882, 0, 1.18934, 0)
+
+-- // StarterGui.ScreenGui. bar.ImageLabel \\ --
+UI["6"] = Instance.new("ImageLabel", UI["2"])
+UI["6"]["BorderSizePixel"] = 0
+UI["6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["6"]["Image"] = [[http://www.roblox.com/asset/?id=18975097884]]
+UI["6"]["Size"] = UDim2.new(0.02998, 0, 0.94444, 0)
+UI["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+
+-- // StarterGui.ScreenGui. bar.TextBox \\ --
+UI["7"] = Instance.new("TextBox", UI["2"])
+UI["7"]["CursorPosition"] = -1
+UI["7"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["7"]["BorderSizePixel"] = 0
+UI["7"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["7"]["TextSize"] = 40
+UI["7"]["TextYAlignment"] = Enum.TextYAlignment.Top
+UI["7"]["BackgroundColor3"] = Color3.fromRGB(49, 45, 45)
+UI["7"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["7"]["Size"] = UDim2.new(0.78073, 0, 9.77778, 0)
+UI["7"]["Position"] = UDim2.new(0.06349, 0, 1.77778, 0)
+UI["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["7"]["Text"] = [[]]
+
+-- // StarterGui.ScreenGui. bar.TextBox.ScrollingFrame \\ --
+UI["8"] = Instance.new("ScrollingFrame", UI["7"])
+UI["8"]["Active"] = true
+UI["8"]["BorderSizePixel"] = 0
+UI["8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["8"]["Size"] = UDim2.new(0.05905, 0, 0.56818, 0)
+UI["8"]["ScrollBarImageColor3"] = Color3.fromRGB(77, 77, 77)
+UI["8"]["Position"] = UDim2.new(-0.05905, 0, 0.08523, 0)
+UI["8"]["BorderColor3"] = Color3.fromRGB(71, 71, 71)
+UI["8"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.ScreenGui. bar.Frame \\ --
+UI["9"] = Instance.new("Frame", UI["2"])
+UI["9"]["BorderSizePixel"] = 0
+UI["9"]["BackgroundColor3"] = Color3.fromRGB(57, 53, 53)
+UI["9"]["Size"] = UDim2.new(0.99118, 0, 1.83333, 0)
+UI["9"]["Position"] = UDim2.new(0.00882, 0, 11.55556, 0)
+UI["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+
+-- // StarterGui.ScreenGui. bar.Frame.TextButton \\ --
+UI["a"] = Instance.new("TextButton", UI["9"])
+UI["a"]["BorderSizePixel"] = 0
+UI["a"]["TextSize"] = 14
+UI["a"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["a"]["BackgroundColor3"] = Color3.fromRGB(65, 61, 61)
+UI["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["a"]["Size"] = UDim2.new(0.1121, 0, 0.69697, 0)
+UI["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["a"]["Text"] = [[Execute]]
+UI["a"]["Position"] = UDim2.new(0.12456, 0, 0.14106, 0)
+
+-- // StarterGui.ScreenGui. bar.Frame.TextButton \\ --
+UI["b"] = Instance.new("TextButton", UI["9"])
+UI["b"]["BorderSizePixel"] = 0
+UI["b"]["TextSize"] = 14
+UI["b"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["b"]["BackgroundColor3"] = Color3.fromRGB(65, 61, 61)
+UI["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["b"]["Size"] = UDim2.new(0.1121, 0, 0.69697, 0)
+UI["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["b"]["Text"] = [[Execute]]
+UI["b"]["Position"] = UDim2.new(0.37544, 0, 0.14106, 0)
+
+-- // StarterGui.ScreenGui. bar.Frame.TextButton \\ --
+UI["c"] = Instance.new("TextButton", UI["9"])
+UI["c"]["BorderSizePixel"] = 0
+UI["c"]["TextSize"] = 14
+UI["c"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["c"]["BackgroundColor3"] = Color3.fromRGB(65, 61, 61)
+UI["c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["c"]["Size"] = UDim2.new(0.1121, 0, 0.69697, 0)
+UI["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["c"]["Text"] = [[Execute]]
+UI["c"]["Position"] = UDim2.new(0.25089, 0, 0.14106, 0)
+
+-- // StarterGui.ScreenGui. bar.Frame.TextButton \\ --
+UI["d"] = Instance.new("TextButton", UI["9"])
+UI["d"]["BorderSizePixel"] = 0
+UI["d"]["TextSize"] = 14
+UI["d"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["d"]["BackgroundColor3"] = Color3.fromRGB(65, 61, 61)
+UI["d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["d"]["Size"] = UDim2.new(0.1121, 0, 0.69697, 0)
+UI["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["d"]["Text"] = [[Execute]]
+UI["d"]["Position"] = UDim2.new(0.61032, 0, 0.14106, 0)
+
+-- // StarterGui.ScreenGui. bar.Frame.TextButton \\ --
+UI["e"] = Instance.new("TextButton", UI["9"])
+UI["e"]["BorderSizePixel"] = 0
+UI["e"]["TextSize"] = 14
+UI["e"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["e"]["BackgroundColor3"] = Color3.fromRGB(65, 61, 61)
+UI["e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["e"]["Size"] = UDim2.new(0.1121, 0, 0.69697, 0)
+UI["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["e"]["Text"] = [[Execute]]
+UI["e"]["Position"] = UDim2.new(0.81317, 0, 0.14106, 0)
+
+-- // StarterGui.ScreenGui. bar.Frame.TextButton \\ --
+UI["f"] = Instance.new("TextButton", UI["9"])
+UI["f"]["BorderSizePixel"] = 0
+UI["f"]["TextSize"] = 14
+UI["f"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["f"]["BackgroundColor3"] = Color3.fromRGB(65, 61, 61)
+UI["f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["f"]["Size"] = UDim2.new(0.1121, 0, 0.69697, 0)
+UI["f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["f"]["Text"] = [[Execute]]
+UI["f"]["Position"] = UDim2.new(0.49822, 0, 0.14106, 0)
+
+-- // StarterGui.ScreenGui. bar.Frame.TextButton \\ --
+UI["10"] = Instance.new("TextButton", UI["9"])
+UI["10"]["BorderSizePixel"] = 0
+UI["10"]["TextSize"] = 14
+UI["10"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["10"]["BackgroundColor3"] = Color3.fromRGB(65, 61, 61)
+UI["10"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["10"]["Size"] = UDim2.new(0.1121, 0, 0.69697, 0)
+UI["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["10"]["Text"] = [[Execute]]
+UI["10"]["Position"] = UDim2.new(0, 0, 0.14106, 0)
+
+-- // StarterGui.ScreenGui. bar.Frame \\ --
+UI["11"] = Instance.new("Frame", UI["2"])
+UI["11"]["BorderSizePixel"] = 0
+UI["11"]["BackgroundColor3"] = Color3.fromRGB(57, 53, 53)
+UI["11"]["Size"] = UDim2.new(0.00529, 0, 10.27778, 0)
+UI["11"]["Position"] = UDim2.new(0.84422, 0, 1.2449, 0)
+UI["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+
+-- // StarterGui.ScreenGui. bar.Frame \\ --
+UI["12"] = Instance.new("Frame", UI["2"])
+UI["12"]["BorderSizePixel"] = 0
+UI["12"]["BackgroundColor3"] = Color3.fromRGB(41, 37, 37)
+UI["12"]["Size"] = UDim2.new(0.05467, 0, 9.77778, 0)
+UI["12"]["Position"] = UDim2.new(0.00882, 0, 1.77778, 0)
+UI["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+
+-- // StarterGui.ScreenGui. bar.Frame \\ --
+UI["13"] = Instance.new("Frame", UI["2"])
+UI["13"]["BorderSizePixel"] = 0
+UI["13"]["BackgroundColor3"] = Color3.fromRGB(130, 130, 130)
+UI["13"]["Size"] = UDim2.new(0.00176, 0, 0.55556, 0)
+UI["13"]["Position"] = UDim2.new(0.06422, 0, 1.2449, 0)
+UI["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+
+-- // StarterGui.ScreenGui. bar.Frame \\ --
+UI["14"] = Instance.new("Frame", UI["2"])
+UI["14"]["BorderSizePixel"] = 0
+UI["14"]["BackgroundColor3"] = Color3.fromRGB(65, 61, 61)
+UI["14"]["Size"] = UDim2.new(0.97884, 0, 0.53288, 0)
+UI["14"]["Position"] = UDim2.new(0.00882, 0, 1.2449, 0)
+UI["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+
+-- // StarterGui.ScreenGui. bar.Frame \\ --
+UI["15"] = Instance.new("Frame", UI["2"])
+UI["15"]["BorderSizePixel"] = 0
+UI["15"]["BackgroundColor3"] = Color3.fromRGB(57, 53, 53)
+UI["15"]["Size"] = UDim2.new(0.01058, 0, 12.11111, 0)
+UI["15"]["Position"] = UDim2.new(0.98942, 0, 1.2449, 0)
+UI["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+
+-- // StarterGui.ScreenGui. bar.Frame \\ --
+UI["16"] = Instance.new("Frame", UI["2"])
+UI["16"]["BorderSizePixel"] = 0
+UI["16"]["BackgroundColor3"] = Color3.fromRGB(57, 53, 53)
+UI["16"]["Size"] = UDim2.new(0.00882, 0, 12.16667, 0)
+UI["16"]["Position"] = UDim2.new(0, 0, 1.2449, 0)
+UI["16"]["BorderColor3"] = Color3.fromRGB(41, 37, 37)
+
+
+return UI["1"], require;
